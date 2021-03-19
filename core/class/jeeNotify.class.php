@@ -47,13 +47,6 @@ class template extends eqLogic {
   public static function dependancy_info() {
     $return = array();
     $return['log'] = 'jeeNotify_install';
-    $mailparser = realpath(dirname(__FILE__) . '/../../resources/node_modules/jeedNotify');
-    $return['progress_file'] = '/tmp/jeeNotify_dep';
-    if (is_dir($mailparser)) {
-      $return['state'] = 'ok';
-    } else {
-      $return['state'] = 'nok';
-    }
     return $return;
   }
 

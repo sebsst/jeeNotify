@@ -196,4 +196,4 @@ $eqLogics = eqLogic::byType($plugin->getId());
 <!-- Inclusion du fichier javascript du plugin (dossier, nom_du_fichier, extension_du_fichier, id_du_plugin) -->
 <?php include_file('desktop', 'jeeNotify', 'js', 'jeeNotify');?>
 <!-- Inclusion du fichier javascript du core - NE PAS MODIFIER NI SUPPRIMER -->
-<?php include_file('core', 'plugin.jeeNotify', 'js');?>
+<?php include_file('core', 'plugin.template', 'js');?>
