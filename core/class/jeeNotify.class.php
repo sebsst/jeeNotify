@@ -19,7 +19,7 @@
 /* * ***************************Includes********************************* */
 require_once __DIR__  . '/../../../../core/php/core.inc.php';
 
-class template extends eqLogic {
+class jeeNotify extends eqLogic {
 
   public static function initInfosMap(){
 
@@ -217,7 +217,7 @@ public function postSave() {
   //Cmd Infos
   foreach(self::$_infosMap as $cmdLogicalId=>$params)
   {
-    $Cmd = $this->getCmd('info', $cmdLogicalId);
+    $jeeNotifyCmd = $this->getCmd('info', $cmdLogicalId);
 
     if (!is_object($jeeNotifyCmd))
     {
@@ -285,7 +285,7 @@ public static function preConfig_<Variable>() {
 /*     * **********************Getteur Setteur*************************** */
 }
 
-class templateCmd extends cmd {
+class jeeNotifyCmd extends cmd {
   /*     * *************************Attributs****************************** */
 
   /*
